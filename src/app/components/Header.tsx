@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "@/app/assets/logo_colored.png";
 import { CiLight, CiDark } from "react-icons/ci";
@@ -9,12 +9,29 @@ import { useRouter } from "next/navigation";
 
 const Header = () => {
   const { theme, toggleTheme } = useThemeContext();
+  const [ isScrolled, setIsScrolled ] = useState<boolean>(false)
   const router = useRouter();
 
   const navItems = ["about", "career highlights", "project highlights", "hire me"]
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="flex justify-between items-center xl:px-10 xl:py-5 md:px-5 md:py-2">
+    <div className={`fixed top-0 left-0 h-20 w-full flex justify-between items-center xl:px-10 xl:py-5 md:px-5 md:py-2 
+      ${isScrolled 
+        ? "backdrop-blur-md bg-opacity-80 dark:bg-[#020c1bb3] bg-[#f4f4f4b3] shadow-sm"
+        : "bg-transparent" }`}>
       {/* LOGO */}
       <Image
         src={logo}

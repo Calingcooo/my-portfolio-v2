@@ -21,7 +21,3 @@
 .bouncing-loader > div:nth-child(3) {
   animation-delay: 0.4s;
 }
-
-.resume:hover {
-  box-shadow: 5px 5px 0 0 #64ffda;
-}
