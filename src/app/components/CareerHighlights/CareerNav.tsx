@@ -1,18 +1,37 @@
+"use client";
+
+import { useState } from "react";
+import { CareerItem, careerData } from "@/app/data/careerData";
+import CareerContent from "./CareerContent";
+
 const CareerNav = () => {
-  const careerItems = ["DigEco Technologies", "Skin Manila Inc."];
+  const [selectedCareer, setSelectedCareer] = useState<CareerItem>(
+    careerData[0]
+  );
 
   return (
-    <ul className="w-[30%]">
-      {careerItems.map((item, i) => (
-        <li
-          className="hover:text-[#64ffda] cursor-pointer transition-all duration-150"
-          key={i}
-        >
-          {item}
-        </li>
-      ))}
-    </ul>
+    <div className="flex flex-col md:flex-row mx-5 md:mx-0">
+      <div className="flex flex-row justify-start md:flex-col min-w-max">
+        {careerData.map((item) => (
+          <button
+            className={`${
+              selectedCareer.id === item.id
+              ? "border-b-2 md:border-b-0 md:border-l-2 border-[#64ffda] text-[#64ffda] bg-slate-900"
+              : "border-b-2 md:border-b-0 md:border-l-2 border-slate-800 text-slate-400"
+            } font-light capitalize text-start hover:text-[#64ffda] dark:hover:bg-slate-800 px-5 py-2 cursor-pointer transition-colors duration-300 ease-in-out ${
+              selectedCareer.id === item.id ? "delay-200" : "delay-0"
+            }`}
+            onClick={() => setSelectedCareer(item)}
+            aria-current={selectedCareer.id === item.id ? "true" : "false"}
+            key={item.id}
+          >
+            {item.title}
+          </button>
+        ))}
+      </div>
+        <CareerContent career={selectedCareer} />
+    </div>
   );
 };
 
-export default CareerNav
+export default CareerNav;

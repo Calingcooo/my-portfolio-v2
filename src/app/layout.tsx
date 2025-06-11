@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="font-poppins bg-[#f4f4f4] dark:bg-[#020c1b] antialiased"
+        className="font-poppins bg-[#f4f4f4] dark:bg-[#020c1b] md:mx-40 md:px-40 antialiased relative"
       >
         <ThemeProvider>
           {children}
