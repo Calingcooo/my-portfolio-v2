@@ -9,10 +9,21 @@ export type CareerItem = {
 
 export const careerData: CareerItem[] = [
     {
-        id: "digital-ecosystem-technologies-inc",
-        title: "digital ecosystem technologies inc.",
+        id: "arhika-technologies-inc",
+        title: "arhika",
         role: "Jr. Full-stack Web Developer",
-        period: "Aug 2023 - Present",
+        period: "Sept 2024 - Present",
+        responsibilities: [
+            "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+            "Collaborated with designers to implement pixel-perfect UIs",
+            "Optimized application performance and accessibility"
+        ],
+    },
+    {
+        id: "digital-ecosystem-technologies-inc",
+        title: "digital ecosystems",
+        role: "Jr. Full-stack Web Developer",
+        period: "Aug 2023 - Sept 2024",
         responsibilities: [
             "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
             "Collaborated with designers to implement pixel-perfect UIs",
@@ -21,7 +32,7 @@ export const careerData: CareerItem[] = [
     },
     {
         id: "skin-manila-inc",
-        title: "skin manila inc.",
+        title: "skin manila",
         role: "I.T Specialist",
         period: "Dec 2022 - July 2023",
         responsibilities: [

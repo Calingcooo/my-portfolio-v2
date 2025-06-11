@@ -41,7 +41,7 @@ const Header = () => {
       />
 
       {/* NAV ITEMS */}
-      <ul className="flex items-center gap-5 capitalize text-[#0f0f0f] dark:text-[#f4f4f4]">
+      <ul className="hidden md:flex items-center gap-5 capitalize text-[#0f0f0f] dark:text-[#f4f4f4]">
         {navItems.map((item, i) => (
           <li
             className="cursor-pointer hover:text-[#64ffda] hover:-translate-y-1 tracking-wide text-sm transition-all duration-150"
@@ -50,7 +50,7 @@ const Header = () => {
             {item}
           </li>
         ))}
-        <li className="font-poppins outline-[#64ffda] outline-2 font-medium tracking-tighter rounded-sm px-3 py-1 cursor-pointer text-[#f4f4f4] dark:text-[#64ffda] bg-[#0f0f0f] dark:bg-transparent hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] transition-all duration-300 ease-in-out">
+        <li className="font-poppins outline-[#64ffda] outline-1 font-light tracking-wide rounded-sm px-3 py-1 cursor-pointer text-[#f4f4f4] dark:text-[#64ffda] bg-[#0f0f0f] dark:bg-transparent hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] transition-all duration-300 ease-in-out">
             resume
         </li>
         <li
@@ -64,7 +64,7 @@ const Header = () => {
                         hover:rotate-12 transition-transform duration-700" 
             />
           ) : (
-            <CiDark 
+            <CiDark
               size={26} 
               className="text-blue-400
                         hover:-rotate-12 transition-transform duration-700" 
