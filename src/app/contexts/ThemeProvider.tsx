@@ -1,7 +1,7 @@
 "use client"
 
 import React, { createContext, ReactNode, useContext, useState, FC, useEffect } from 'react';
-import Loading from '../components/Loading';
+import ImageDrawingLoader from '../components/Loading';
 
 interface ThemeContextInterface {
   theme: string;
@@ -32,7 +32,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
     setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
   };
 
-  if (!mounted) return <Loading />
+  if (!mounted) return <ImageDrawingLoader />
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
