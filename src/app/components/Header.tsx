@@ -7,10 +7,16 @@ import logo from "@/app/assets/logo_colored.png";
 import DesktopNav from "./Navigation/DesktopNav";
 import MobileNav from "./Navigation/MobileNav";
 
-
 const Header = () => {
   const [ isScrolled, setIsScrolled ] = useState<boolean>(false)
   const router = useRouter();
+
+  const navItems = [
+    "about",
+    "career highlights",
+    "project highlights",
+    "hire me",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +32,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 h-20 w-full flex justify-between items-center px-5 py-2 
+    <div className={`fixed top-0 left-0 h-20 z-10 w-full flex justify-between items-center px-5 py-2 
       ${isScrolled 
         ? "backdrop-blur-md bg-opacity-80 dark:bg-[#020c1bb3] bg-[#f4f4f4b3] shadow-sm"
         : "bg-transparent" }`}>
@@ -35,11 +41,11 @@ const Header = () => {
         src={logo}
         alt="Logo"
         onClick={() => router.push("/")}
-        className="w-12 rounded-full hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] cursor-pointer transition-all duration-100 ease-in-out"
+        className="w-12 rounded-full hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] cursor-pointer transition-all duration-100 ease-in-out z-50"
       />
 
-        <DesktopNav />
-        <MobileNav />
+        <DesktopNav navItems={navItems} />
+        <MobileNav navItems={navItems} />
     </div>
   );
 };
