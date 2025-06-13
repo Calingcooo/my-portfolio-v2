@@ -5,9 +5,9 @@ import Email from "./components/Email";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-full">
+    <div className="min-h-screen">
       <Header />
-      <main className="mt-20 flex flex-col justify-center items-center h-full w-full">
+      <main className="mt-20 flex flex-col justify-center items-center h-full">
         <Social />
         <Email />
         <Career />
