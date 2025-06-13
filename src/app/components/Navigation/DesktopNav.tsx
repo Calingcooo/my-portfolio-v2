@@ -1,5 +1,5 @@
 import React from "react";
-import { CiLight, CiDark, CiMenuBurger } from "react-icons/ci";
+import { CiLight, CiDark } from "react-icons/ci";
 import { useThemeContext } from "@/app/contexts/ThemeProvider";
 
 const DesktopNav = () => {
