@@ -12,8 +12,6 @@ const Header = () => {
   const [ isScrolled, setIsScrolled ] = useState<boolean>(false)
   const router = useRouter();
 
-  const navItems = ["about", "career highlights", "project highlights", "hire me"]
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
