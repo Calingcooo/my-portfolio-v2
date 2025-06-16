@@ -11,7 +11,7 @@ import Career from "./components/sections/Career";
 import Project from "./components/sections/Project";
 
 export default function Home() {
-  const [ isLoading, setIsLoading ] = useState(false);
+  const [ isLoading, setIsLoading ] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
