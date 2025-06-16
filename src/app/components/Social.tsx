@@ -4,7 +4,7 @@ import { socialLinks, SocialData } from "../data/socialData";
 const Social = () => {
   return (
     <div
-      className="hidden md:flex flex-col items-center gap-5 fixed text-white left-15 bottom-0 
+      className="hidden lg:flex flex-col items-center gap-5 fixed text-white left-15 bottom-0 
                after:content-[''] after:block after:w-px after:h-40 
                after:bg-slate-400 after:mt-3"
     >
