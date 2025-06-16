@@ -10,7 +10,7 @@ const DesktopNav = ({ navItems }: DesktopNavProps) => {
   const { theme, toggleTheme } = useThemeContext();
 
   return (
-    <ul className="hidden md:flex items-center gap-5 capitalize text-[#0f0f0f] dark:text-[#f4f4f4]">
+    <ul className="hidden lg:flex items-center gap-5 capitalize text-[#0f0f0f] dark:text-[#f4f4f4]">
       {navItems.map((item, i) => (
         <li
           className="cursor-pointer hover:text-[#64ffda] hover:-translate-y-1 tracking-wide text-sm transition-all duration-150"

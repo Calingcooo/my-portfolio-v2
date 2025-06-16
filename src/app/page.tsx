@@ -5,9 +5,10 @@ import Header from "./components/Header";
 import Social from "./components/Social";
 import Email from "./components/Email";
 import ImageDrawingLoader from "./components/Loading";
-import Career from "./components/Career";
-import Project from "./components/Project";
-import Hero from "./components/Hero";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Career from "./components/sections/Career";
+import Project from "./components/sections/Project";
 
 export default function Home() {
   const [ isLoading, setIsLoading ] = useState(false);
@@ -25,12 +26,13 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen mx-5 md:mx-40 md:px-40 relative">
+    <div className="min-h-[100svh] mx-5 lg:mx-40 lg:px-40 relative">
       <Header />
-      <main className="md:mt-20 flex flex-col justify-center items-center h-full">
+      <main className="flex flex-col justify-center items-center h-full mt-10 lg:mt-0">
         <Social />
         <Email />
         <Hero />
+        <About />
         <Career />
         <Project />
       </main>

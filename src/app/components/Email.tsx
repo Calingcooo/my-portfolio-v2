@@ -2,7 +2,7 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="fixed right-8 bottom-0 hidden md:flex flex-col items-center gap-6 
+    <div className="fixed right-8 bottom-0 hidden lg:flex flex-col items-center gap-6 
                    after:content-[''] after:block after:w-px after:h-40 
                    after:bg-slate-400 after:mt-3">
       <a

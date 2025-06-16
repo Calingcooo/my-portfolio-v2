@@ -24,7 +24,7 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
   }, [isOpen]);
 
   return (
-    <div className="flex md:hidden relative">
+    <div className="flex lg:hidden relative">
       {/* Hamburger Button */}
       <button
         className="relative h-8 w-8 focus:outline-none z-51"
@@ -52,13 +52,13 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
       <aside
         aria-hidden={!isOpen}
         tabIndex={isOpen ? 0 : -1}
-        className={`fixed min-h-screen inset-y-0 right-0 z-50 w-80 bg-[#112240] transform transition-transform duration-300 ease-in-out ${
+        className={`fixed min-h-[100svh] inset-y-0 right-0 z-50 w-80 bg-[#112240] transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Menu"
       >
         <div className="flex flex-col items-center justify-center pt-16 px-4 h-full capitalize">
-          <ul className="space-y-12 text-center">
+          <ul className="space-y-6 lg:space-y-12 text-center">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
