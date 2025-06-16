@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react"
 import Header from "./components/Header";
-import Career from "./components/Career";
 import Social from "./components/Social";
 import Email from "./components/Email";
 import ImageDrawingLoader from "./components/Loading";
+import Career from "./components/Career";
+import Project from "./components/Project";
+import Hero from "./components/Hero";
 
 export default function Home() {
   const [ isLoading, setIsLoading ] = useState(true);
@@ -28,7 +30,9 @@ export default function Home() {
       <main className="mt-20 flex flex-col justify-center items-center h-full">
         <Social />
         <Email />
+        <Hero />
         <Career />
+        <Project />
       </main>
     </div>
   );

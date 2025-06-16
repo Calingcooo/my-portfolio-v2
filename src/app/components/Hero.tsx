@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Project = () => {
+const Hero = () => {
   return (
     <div className='text-white w-full border-2'>
-      Project section
+      Hero section
     </div>
   )
 }
 
-export default Project
+export default Hero
