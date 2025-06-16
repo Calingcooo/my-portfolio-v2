@@ -1,6 +1,11 @@
 import { Metadata } from "next";
 import { ThemeProvider } from "./contexts/ThemeProvider";
+import { Rubik } from "next/font/google"
 import "./globals.css";
+
+const rubik = Rubik({
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "Jhon Edmir Calingco",
@@ -13,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={rubik.className}>
       <body
-        className="font-poppins bg-[#f4f4f4] dark:bg-[#020c1b] antialiased"
+        className="bg-[#f4f4f4] dark:bg-[#0a192f] antialiased"
       >
         <ThemeProvider>
           {children}

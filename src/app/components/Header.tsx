@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <div className={`fixed top-0 left-0 h-20 z-10 w-full flex justify-between items-center px-5 py-2 
       ${isScrolled 
-        ? "backdrop-blur-md bg-opacity-80 dark:bg-[#020c1bb3] bg-[#f4f4f4b3] shadow-sm"
+        ? "backdrop-blur-md bg-opacity-80 dark:bg-[#0a192f] bg-[#f4f4f4b3] shadow-sm"
         : "bg-transparent" }`}>
       {/* LOGO */}
       <Image

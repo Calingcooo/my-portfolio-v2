@@ -2,9 +2,26 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='text-white w-full border-2'>
-      <div className=''>
-        <p>Hi, my name is</p>
+    <div className="lg:block flex items-center justify-center text-white w-full min-h-[100svh] lg:min-h-0">
+      <div className="flex flex-col justify-center  max-w-4xl w-full">
+        <h1 className="text-[#64ffda] text-sm md:text-base tracking-widest mb-4">
+          Hi, my name is
+        </h1>
+        <h2 className="text-slate-200 font-extrabold text-4xl md:text-6xl leading-tight">
+          Jhon Edmir Calingco.
+        </h2>
+        <h3 className="text-slate-400 font-extrabold text-3xl md:text-5xl leading-tight mt-1">
+          I build reliable web applications.
+        </h3>
+        <p className="text-slate-400 mt-6 max-w-[700px] leading-relaxed text-base md:text-lg">
+          I’m a full-stack developer with a backend focus, currently building scalable web apps as a Junior Full-stack Web Developer using Node.js, PostgreSQL, and React.
+        </p>
+        <button className="outline-[#64ffda] max-w-2xs outline-1 font-light max-wd-sm mt-6 tracking-widest rounded-sm px-5 py-3 cursor-pointer text-[#f4f4f4] dark:text-[#64ffda] bg-[#0f0f0f] dark:bg-transparent hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] transition-all duration-300 ease-in-out"
+        >
+          Check out my work
+          {" "}
+          <span className='inline-block -rotate-45 text-sm'>→</span>
+        </button>
       </div>
     </div>
   )
