@@ -1,11 +1,6 @@
 import { Metadata } from "next";
 import { ThemeProvider } from "./contexts/ThemeProvider";
-import { Rubik } from "next/font/google"
 import "./globals.css";
-
-const rubik = Rubik({
-  subsets: ['latin'],
-})
 
 export const metadata: Metadata = {
   title: "Jhon Edmir Calingco",
