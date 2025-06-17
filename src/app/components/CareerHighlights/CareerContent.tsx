@@ -15,8 +15,8 @@ const CareerContent = ({ career }: CareerContentProps) => {
         transition={{ duration: 0.5 }}
         key={career.id}
       >
-        <h2 className="text-xl font-bold text-[#ccd6f6] mb-2">
-          {career.role}
+        <h2 className="mb-1">
+          <span className="text-[#ccd6f6] text-xl font-bold ">{career.role}</span>
         </h2>
         <p className="text-sm text-slate-400 mb-6">{career.period}</p>
 

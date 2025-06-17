@@ -15,11 +15,11 @@ const About = () => {
 
   return (
     <section className="flex flex-col text-white w-full">
-      <div className="lg:mx-40 lg:py-20">
+      <div className="md:py-10 lg:mx-40 lg:py-20">
         <SectionHeader title="About me" />
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
           <div className="lg:w-1/2">
-            <p className="leading-relaxed text-base text-slate-400 mb-5">
+            <p className="leading-relaxed text-lg text-slate-400 mb-5">
               Hello! My name is JanJan, and I enjoy building things for the web.
               My interest in web development began back in 2008 when I started
               customizing Friendster backgrounds. What began as a simple attempt
@@ -27,29 +27,29 @@ const About = () => {
               turned into a fascination with HTML and CSS. That early curiosity
               sparked a passion that continues to drive me today.
             </p>
-            <p className="leading-relaxed text-base text-slate-400 mb-5">
+            <p className="leading-relaxed text-lg text-slate-400 mb-5">
               Fast-forward to today, and I’ve had the privilege of working at an
               dermatology and aesthetic clinic, start-up, and a Research and
               Development (R&D). My main focus these days is building
               accessible, inclusive products and digital experiences at Arhika
               I.T Solutions for a variety of clients.
             </p>
-            <p className="leading-relaxed text-base text-slate-400 mb-5">
+            <p className="leading-relaxed text-lg text-slate-400 mb-5">
               Here are a few technologies I’ve been working with recently:
             </p>
             <ul className="grid grid-cols-2 gap-y-1 gap-x-4">
               {technologies.map((tech, i) => (
                 <li
                   key={i}
-                  className="relative leading-6 pl-5 text-slate-400 before:content-['▹'] before:absolute before:left-0 before:text-[#64ffda]"
+                  className="text-lg relative leading-6 pl-5 text-slate-400 before:content-['▹'] before:absolute before:left-0 before:text-[#64ffda]"
                 >
                   {tech}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex items-center lg:items-start justify-center w-1/2">
-            <div className="w-80 relative group">
+          <div className="flex md:items-start lg:items-start justify-center w-full md:w-1/2">
+            <div className="w-80 md:w-70 lg:w-80 relative group">
               {/* Overlay (moves with image, opacity fades on hover) */}
               <div
                 className="absolute inset-0 rounded-md bg-[#27ecbe] opacity-50 
