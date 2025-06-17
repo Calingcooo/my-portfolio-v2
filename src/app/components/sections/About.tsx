@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <section className="flex flex-col text-white w-full">
+    <section className="flex flex-col justify-center text-white w-full min-h-[100svh]">
       <div className="md:py-10 lg:mx-40 lg:py-20">
         <SectionHeader title="About me" />
         <div className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
