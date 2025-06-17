@@ -2,8 +2,8 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="fixed right-8 bottom-0 hidden lg:flex flex-col items-center gap-6 
-                   after:content-[''] after:block after:w-px after:h-40 
+    <div className="fixed md:right-5 lg:right-15 bottom-0 hidden md:flex flex-col items-center gap-6 
+                   after:content-[''] after:block after:w-px after:lg:h-20 after:md:h-15 
                    after:bg-slate-400 after:mt-3">
       <a
         href="mailto:calingco.je@gmail.com"
