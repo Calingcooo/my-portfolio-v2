@@ -4,7 +4,7 @@ import CareerNav from "../CareerHighlights/CareerNav";
 
 const Career = () => {
   return (
-    <div className="flex flex-col md:py-20 md:px-40 w-full mt-40">
+    <div className="flex flex-col lg:py-20 lg:px-40 w-full mt-15 md:mt-20 lg:mt-40">
       <SectionHeader title="Where I've Worked"/>
       <CareerNav />
     </div>

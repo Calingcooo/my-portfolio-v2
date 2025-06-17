@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={rubik.className}>
+    <html lang="en" >
       <body
-        className="bg-[#f4f4f4] dark:bg-[#0a192f] antialiased"
+        className="font-poppins bg-[#f4f4f4] dark:bg-[#0a192f] antialiased"
       >
         <ThemeProvider>
           {children}

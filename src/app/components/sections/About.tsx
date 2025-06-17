@@ -15,9 +15,9 @@ const About = () => {
 
   return (
     <section className="flex flex-col text-white w-full">
-      <div className="lg:mx-40 lg:py-20">
+      <div className="md:py-10 lg:mx-40 lg:py-20">
         <SectionHeader title="About me" />
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
           <div className="lg:w-1/2">
             <p className="leading-relaxed text-base text-slate-400 mb-5">
               Hello! My name is JanJan, and I enjoy building things for the web.
@@ -48,8 +48,8 @@ const About = () => {
               ))}
             </ul>
           </div>
-          <div className="flex items-center lg:items-start justify-center w-1/2">
-            <div className="w-80 relative group">
+          <div className="flex md:items-start lg:items-start justify-center w-full md:w-1/2">
+            <div className="w-80 md:w-70 lg:w-80 relative group">
               {/* Overlay (moves with image, opacity fades on hover) */}
               <div
                 className="absolute inset-0 rounded-md bg-[#27ecbe] opacity-50 

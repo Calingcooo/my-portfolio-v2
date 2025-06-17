@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-[100svh] mx-5 lg:mx-40 lg:px-40 relative">
+    <div className="min-h-[100svh] mx-5 md:mx-10 md:px-10 lg:mx-40 lg:px-40 relative">
       <Header />
       <main className="flex flex-col justify-center items-center h-full mt-10 lg:mt-0">
         <Social />

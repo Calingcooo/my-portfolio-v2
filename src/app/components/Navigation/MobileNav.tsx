@@ -24,7 +24,7 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
   }, [isOpen]);
 
   return (
-    <div className="flex lg:hidden relative">
+    <div className="flex md:hidden relative">
       {/* Hamburger Button */}
       <button
         className="relative h-8 w-8 focus:outline-none z-51"
