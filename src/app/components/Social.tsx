@@ -4,8 +4,8 @@ import { socialLinks, SocialData } from "../data/socialData";
 const Social = () => {
   return (
     <div
-      className="hidden md:flex flex-col items-center gap-5 fixed text-white md:left-8 lg:left-15 bottom-0 
-               after:content-[''] after:block after:w-px after:lg:h-40 after:md:h-28
+      className="hidden md:flex flex-col items-center gap-5 fixed text-white md:left-5 lg:left-15 bottom-0 
+               after:content-[''] after:block after:w-px after:lg:h-20 after:md:h-15
                after:bg-slate-400 after:mt-3"
     >
       {socialLinks.map((social: SocialData) => (
