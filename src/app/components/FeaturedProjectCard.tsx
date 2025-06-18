@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { ProjectItem } from "../data/projectData";
-import PROJ_1 from "@/app/assets/proj_test_1.jpg";
+import LAW_FIRM from "@/app/assets/law_firm_2.png";
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -28,12 +28,12 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.title}
         </h2>
 
-        <div className="flex items-center md:min-h-[100px] z-20 md:bg-[#112240] text-slate-400 text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
+        <div className="flex items-center z-20 md:bg-[#112240] text-slate-400 text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
           <p>{project.description}</p>
         </div>
 
         <ul
-          className={`flex gap-5 mt-5 z-20 ${
+          className={`flex flex-wrap gap-5 mt-5 z-20 ${
             isEven ? "md:justify-start" : "md:justify-end"
           }`}
         >
@@ -44,12 +44,22 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
           ))}
         </ul>
 
-        <div className={`flex items-center mt-5 ${isEven ? "md:justify-start" : "md:justify-end" }`}>
-          <a href="#" className="p-2">
-            <FiGithub size={18} className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out" />
+        <div
+          className={`flex items-center gap-3 mt-5 ${
+            isEven ? "md:justify-start" : "md:justify-end"
+          }`}
+        >
+          <a href="#">
+            <FiGithub
+              size={18}
+              className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
+            />
           </a>
-          <a href="#" className="p-2">
-            <FiExternalLink size={20} className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out" />
+          <a href="#">
+            <FiExternalLink
+              size={20}
+              className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
+            />
           </a>
         </div>
       </div>
@@ -63,7 +73,10 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
         }
       `}
       >
-        <Image src={PROJ_1} alt="Project 1" className=" h-full" />
+        <div className="h-full relative group">
+          <div className="bg-[#64ffda]/40 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
+          <Image src={LAW_FIRM} alt="Project 1" className="h-full" />
+        </div>
       </div>
     </div>
   );
