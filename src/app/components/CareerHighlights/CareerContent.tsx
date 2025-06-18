@@ -25,7 +25,7 @@ const CareerContent = ({ career }: CareerContentProps) => {
             <li
               key={index}
               className="relative text-md leading-6 mb-2 pl-5 text-slate-400 before:content-['▹'] before:absolute before:left-0 
-                before:text-[#64ffda]"
+                before:text-[#64ffda] text-balance"
             >
               {item}
             </li>
