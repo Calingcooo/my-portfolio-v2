@@ -52,7 +52,7 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
       <aside
         aria-hidden={!isOpen}
         tabIndex={isOpen ? 0 : -1}
-        className={`fixed min-h-[100svh] inset-y-0 right-0 z-50 w-80 bg-[#112240] transform transition-transform duration-300 ease-in-out ${
+        className={`fixed min-h-svh inset-y-0 right-0 z-50 w-80 bg-[#112240] transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Menu"

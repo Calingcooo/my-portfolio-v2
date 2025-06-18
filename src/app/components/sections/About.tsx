@@ -14,12 +14,12 @@ const About = () => {
   ];
 
   return (
-    <section className="flex flex-col text-white w-full">
+    <section className="flex flex-col justify-center text-white w-full min-h-svh">
       <div className="md:py-10 lg:mx-40 lg:py-20">
         <SectionHeader title="About me" />
         <div className="flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
           <div className="lg:w-1/2">
-            <p className="leading-relaxed text-lg text-slate-400 mb-5">
+            <p className="leading-relaxed text-lg text-slate-400 mb-5 text-balance">
               Hello! My name is JanJan, and I enjoy building things for the web.
               My interest in web development began back in 2008 when I started
               customizing Friendster backgrounds. What began as a simple attempt
@@ -27,7 +27,7 @@ const About = () => {
               turned into a fascination with HTML and CSS. That early curiosity
               sparked a passion that continues to drive me today.
             </p>
-            <p className="leading-relaxed text-lg text-slate-400 mb-5">
+            <p className="leading-relaxed text-lg text-slate-400 mb-5 text-balance">
               Fast-forward to today, and I’ve had the privilege of working at an
               dermatology and aesthetic clinic, start-up, and a Research and
               Development (R&D). My main focus these days is building
