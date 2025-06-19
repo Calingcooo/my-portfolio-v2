@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { ProjectItem } from "../data/projectData";
+import { ProjectItem } from "../../data/projectData";
 import LAW_FIRM from "@/app/assets/law_firm_2.png";
 
 interface ProjectCardProps {
@@ -13,14 +13,17 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className="grid grid-cols-12 gap-4 w-full mb-20 md:mb-40 border-[1px] border-[#64ffda] md:border-none rounded-md shadow-2xl md:shadow-none relative">
-      <div className="block md:hidden bg-[#0a192f]/95 absolute z-15 w-full h-full" />
+    <div className={`grid grid-cols-12 gap-4 w-full mb-20 md:mb-40 rounded-md shadow-lg md:shadow-none relative overflow-hidden`}>
+
+      <Image src={LAW_FIRM} alt="Project 1 background" fill className="opacity-5 md:hidden w-full h-full object-cover" /> 
+      <div className="md:hidden bg-[#64ffda]/40 absolute z-15 w-full h-full mix-blend-multiply" />
+
       <div
         className={`flex flex-col px-5 py-5 justify-between z-20
         ${
           isEven
-            ? "col-span-12 md:col-start-1 md:col-span-7 md:text-start"
-            : "col-span-12 md:col-start-7 md:col-span-7 md:text-end"
+            ? "col-span-12 md:col-start-1 md:col-span-12 lg:col-span-7 md:text-start"
+            : "col-span-12 md:col-start-5 lg:col-start-6 md:col-span-12 lg:col-span-12 md:text-end"
         }`}
       >
         <h1 className="text-[#64ffda] capitalize">featured project</h1>
@@ -28,12 +31,12 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.title}
         </h2>
 
-        <div className="flex items-center z-20 md:bg-[#112240] text-slate-400 text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
+        <div className="flex items-center justify-center z-20 md:shadow-lg md:bg-[#112240] text-slate-400 md:text-sm lg:text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
           <p>{project.description}</p>
         </div>
 
         <ul
-          className={`flex flex-wrap gap-5 mt-5 z-20 ${
+          className={`flex flex-wrap gap-2 lg:gap-5 mt-5 md:mt-2 lg:mt-5 z-20 ${
             isEven ? "md:justify-start" : "md:justify-end"
           }`}
         >
@@ -65,17 +68,17 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
       </div>
 
       <div
-        className={`z-10 rounded-lg absolute h-full
+        className={`z-10 rounded-lg absolute md:h-[250px] lg:h-full
         ${
           isEven
             ? "col-start-1 col-span-12 md:col-span-7 md:col-start-6"
-            : "md:col-span-7 md:col-start-1"
+            : "flex justify-center md:col-start-1 md:col-span-7"
         }
       `}
       >
         <div className="h-full relative group">
-          <div className="bg-[#64ffda]/40 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
-          <Image src={LAW_FIRM} alt="Project 1" className="h-full" />
+          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
+          <Image src={LAW_FIRM} alt="Project 1" className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300" />
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { projectData } from "@/app/data/projectData";
 import SectionHeader from "../SectionHeader";
-import FeaturedProjectCard from "../FeaturedProjectCard";
+import FeaturedProjectCard from "../ProjectHighlights/FeaturedProjectCard";
 
 const Project = () => {
   return (
-    <section className="text-white w-full min-h-svh">
+    <section className="text-white w-full">
       <div className="lg:mx-40">
         <SectionHeader title="Some Things I’ve Built" />
         <div className="flex flex-col">
