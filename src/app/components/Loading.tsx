@@ -12,7 +12,7 @@ const ImageDrawingLoader = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#0a192f]">
+    <div className="flex items-center justify-center min-h-svh min-w-full bg-[#0a192f]">
       <svg
         viewBox="0 0 78 90"
         className="w-64 h-64"
