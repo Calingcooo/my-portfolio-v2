@@ -20,7 +20,6 @@ const DesktopNav = ({ navItems }: DesktopNavProps) => {
             href={item.href}
             onClick={(e) => {
               e.preventDefault();
-              console.log(e);
               document.getElementById(item.href.substring(1))?.scrollIntoView({
                 behavior: "smooth",
               });

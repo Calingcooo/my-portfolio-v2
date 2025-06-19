@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 interface MobileNavProps {
-  navItems: Array<string>;
+  navItems: Array<{ name: string; href: string }>;
 }
 
 const MobileNav = ({ navItems }: MobileNavProps) => {
@@ -62,11 +62,17 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
             {navItems.map((item, index) => (
               <li key={index}>
                 <a
-                  href="#"
+                  href={item.href}
                   className="block py-2 dark:hover:text-[#64ffda] text-white transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false)
+                    document.getElementById(item.href.substring(1))?.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  }}
                 >
-                  {item}
+                  {item.name}
                 </a>
               </li>
             ))}

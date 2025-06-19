@@ -49,7 +49,7 @@ const Header = () => {
       />
 
       <DesktopNav navItems={navItems} />
-      {/* <MobileNav navItems={navItems} /> */}
+      <MobileNav navItems={navItems} />
     </div>
   );
 };
