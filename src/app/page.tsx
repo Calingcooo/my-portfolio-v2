@@ -9,6 +9,7 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Career from "./components/sections/Career";
 import Project from "./components/sections/Project";
+import Contact from "./components/sections/Contact";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
         <About />
         <Career />
         <Project />
+        <Contact />
         <Footer />
       </main>
       

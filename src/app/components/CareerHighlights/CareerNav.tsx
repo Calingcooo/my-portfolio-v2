@@ -11,7 +11,7 @@ const CareerNav = () => {
 
   return (
     <div className="flex flex-col w-full md:flex-row md:mx-0">
-      <div className="w-full md:w-auto overflow-hidden overflow-x-auto md:overflow-x-visible md:overflow-y-auto scrollbar-hide">
+      <div className="w-full md:min-w-max md:w-auto overflow-hidden overflow-x-auto md:overflow-x-visible md:overflow-y-auto career-nav">
         <div className="flex flex-row md:items-start md:flex-col min-w-max">
           {careerData.map((item) => (
             <button
