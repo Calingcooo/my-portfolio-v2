@@ -9,6 +9,7 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Career from "./components/sections/Career";
 import Project from "./components/sections/Project";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [ isLoading, setIsLoading ] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
         <About />
         <Career />
         <Project />
+        <Footer />
       </main>
     </div>
   );
