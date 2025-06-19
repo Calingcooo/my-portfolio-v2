@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { ProjectItem } from "../data/projectData";
+import { ProjectItem } from "../../data/projectData";
 import LAW_FIRM from "@/app/assets/law_firm_2.png";
 
 interface ProjectCardProps {
@@ -31,7 +31,7 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.title}
         </h2>
 
-        <div className="flex items-center justify-center z-20 md:bg-[#112240] text-slate-400 md:text-sm lg:text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
+        <div className="flex items-center justify-center z-20 md:shadow-lg md:bg-[#112240] text-slate-400 md:text-sm lg:text-lg text-wrap md:px-5 md:py-2 mt-5 rounded-md">
           <p>{project.description}</p>
         </div>
 
@@ -77,8 +77,8 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
       `}
       >
         <div className="h-full relative group">
-          <div className="bg-[#008080]/70 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
-          <Image src={LAW_FIRM} alt="Project 1" className="h-full hidden md:block" />
+          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
+          <Image src={LAW_FIRM} alt="Project 1" className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300" />
         </div>
       </div>
     </div>
