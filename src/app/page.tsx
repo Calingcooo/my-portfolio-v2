@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Social from "./components/Social";
 import Email from "./components/Email";
@@ -12,7 +12,7 @@ import Project from "./components/sections/Project";
 import Footer from "./components/Footer";
 
 export default function Home() {
-  const [ isLoading, setIsLoading ] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,6 +38,7 @@ export default function Home() {
         <Project />
         <Footer />
       </main>
+      
     </div>
   );
 }
