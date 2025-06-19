@@ -43,10 +43,10 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
 
       {isOpen && (
         <div
-          className="fixed inset-0 bg-[#112240]/30 backdrop-blur-md z-40"
+          className="fixed min-h-svh w-full inset-0 bg-[#112240]/50 z-40"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
-        />
+        ></div>
       )}
 
       <aside
@@ -66,10 +66,12 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
                   className="block py-2 dark:hover:text-[#64ffda] text-white transition-colors"
                   onClick={(e) => {
                     e.preventDefault();
-                    setIsOpen(false)
-                    document.getElementById(item.href.substring(1))?.scrollIntoView({
-                      behavior: "smooth",
-                    });
+                    setIsOpen(false);
+                    document
+                      .getElementById(item.href.substring(1))
+                      ?.scrollIntoView({
+                        behavior: "smooth",
+                      });
                   }}
                 >
                   {item.name}
