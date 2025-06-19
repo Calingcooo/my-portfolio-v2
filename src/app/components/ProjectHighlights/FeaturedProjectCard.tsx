@@ -13,9 +13,15 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className={`grid grid-cols-12 gap-4 w-full mb-20 md:mb-40 rounded-md shadow-lg md:shadow-none relative overflow-hidden`}>
-
-      <Image src={LAW_FIRM} alt="Project 1 background" fill className="opacity-5 md:hidden w-full h-full object-cover" /> 
+    <div
+      className={`grid grid-cols-12 gap-4 w-full mb-20 md:mb-40 rounded-md shadow-lg md:shadow-none relative overflow-hidden`}
+    >
+      <Image
+        src={LAW_FIRM}
+        alt="Project 1 background"
+        fill
+        className="opacity-5 md:hidden w-full h-full object-cover"
+      />
       <div className="md:hidden bg-[#64ffda]/40 absolute z-15 w-full h-full mix-blend-multiply" />
 
       <div
@@ -68,7 +74,7 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
       </div>
 
       <div
-        className={`z-10 rounded-lg absolute md:h-[250px] lg:h-full
+        className={`z-10 absolute md:h-[250px] lg:h-full
         ${
           isEven
             ? "col-start-1 col-span-12 md:col-span-7 md:col-start-6"
@@ -77,8 +83,12 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
       `}
       >
         <div className="h-full relative group">
-          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute cursor-pointer transition-colors duration-300" />
-          <Image src={LAW_FIRM} alt="Project 1" className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300" />
+          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute transition-colors duration-300" />
+          <Image
+            src={LAW_FIRM}
+            alt="Project 1"
+            className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300"
+          />
         </div>
       </div>
     </div>
