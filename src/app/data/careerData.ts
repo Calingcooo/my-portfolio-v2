@@ -41,5 +41,16 @@ export const careerData: CareerItem[] = [
             "Implemented design system across all products",
             "Conducted user testing sessions"
         ]
+    },
+    {
+        id: "skin-manila-inc23",
+        title: "skin manila",
+        role: "I.T Specialist",
+        period: "Dec 2022 - July 2023",
+        responsibilities: [
+            "Created reusable component library",
+            "Implemented design system across all products",
+            "Conducted user testing sessions"
+        ]
     }
 ];
