@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-20 z-50 w-full flex justify-between items-center px-5 py-2
+      className={`fixed top-0 left-0 h-24 z-50 w-full flex justify-between items-center px-5 lg:px-16
       ${
         isScrolled
           ? "backdrop-blur-[10px] dark:bg-[#0a192f]/80 bg-[#f4f4f4b3]"
