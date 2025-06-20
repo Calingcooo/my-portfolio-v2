@@ -28,9 +28,9 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-svh mx-5 md:mx-10 md:px-10 lg:mx-40 lg:px-40 relative">
+    <div className="min-h-svh mx-5 relative md:mx-10 md:px-10 lg:mx-15 lg:px-15 xl:mx-80 xl:px-40">
       <Header />
-      <main className="flex flex-col justify-center items-center h-full mt-10 lg:mt-0">
+      <main className="flex flex-col justify-center items-center h-full mt-10">
         <Social />
         <Email />
         <Hero />
@@ -40,7 +40,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-      
     </div>
   );
 }

@@ -4,10 +4,12 @@ import CareerNav from "../CareerHighlights/CareerNav";
 
 const Career = () => {
   return (
-    <div id="career-highlights" className="flex flex-col justify-center min-h-svh lg:py-20 lg:px-60 w-full">
-      <SectionHeader title="Where I've Worked"/>
-      <CareerNav />
-    </div>
+    <section id="career-highlights" className="w-full flex flex-col items-center justify-center min-h-svh py-20 lg:px-30">
+      <div className="min-w-full flex flex-col justify-center">
+        <SectionHeader title="Where I've Worked" />
+        <CareerNav />
+      </div>
+    </section>
   );
 };
 
