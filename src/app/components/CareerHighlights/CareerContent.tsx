@@ -24,7 +24,7 @@ const CareerContent = ({ career }: CareerContentProps) => {
           {career.responsibilities.map((item, index) => (
             <li
               key={index}
-              className="relative text-xs leading-6 mb-2 pl-5 text-slate-400 before:content-['▹'] before:absolute before:left-0 
+              className="relative text-sm leading-6 mb-2 pl-5 text-slate-400 before:content-['▹'] before:absolute before:left-0 
                 before:text-[#64ffda] text-wrap"
             >
               {item}
