@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "@/app/assets/3d_logo.png";
+import logo from "../../../public/assets/3d_logo.png";
 
 const ImageDrawingLoader = () => {
   const [loadingComplete, setLoadingComplete] = useState(false);

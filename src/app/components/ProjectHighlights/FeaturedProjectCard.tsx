@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { ProjectItem } from "../../data/projectData";
-import LAW_FIRM from "@/app/assets/law_firm_2.png";
 
 interface ProjectCardProps {
   project: ProjectItem;
@@ -17,8 +16,8 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
       className={`grid grid-cols-12 gap-4 w-full mb-20 md:mb-40 rounded-md shadow-lg md:shadow-none relative overflow-hidden`}
     >
       <Image
-        src={LAW_FIRM}
-        alt="Project 1 background"
+        src={project.imgSrc}
+        alt={project.title}
         fill
         className="opacity-5 md:hidden w-full h-full object-cover"
       />
@@ -85,8 +84,8 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
         <div className="h-full relative group">
           <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute transition-colors duration-300" />
           <Image
-            src={LAW_FIRM}
-            alt="Project 1"
+            src={project.imgSrc}
+            alt={project.title}
             className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300"
           />
         </div>
