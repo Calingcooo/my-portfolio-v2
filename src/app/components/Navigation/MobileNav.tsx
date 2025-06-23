@@ -43,9 +43,8 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
 
       {isOpen && (
         <div
-          className="fixed min-h-svh w-full inset-0 bg-black/80 z-40"
+          className="fixed inset-0 min-h-svh z-40 w-full backdrop-blur-xl"
           onClick={() => setIsOpen(false)}
-          aria-hidden="true"
         ></div>
       )}
 

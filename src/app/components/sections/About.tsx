@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MY_PIC from "@/app/assets/my_pic.jpg";
+import MY_PIC from "../../../../public/assets/my_pic.jpg";
 import SectionHeader from "../SectionHeader";
 
 const About = () => {
