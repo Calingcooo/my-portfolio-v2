@@ -1,12 +1,13 @@
 import React from "react";
 
 interface SectionHeaderProps {
-    title: string
+    sectionId: string;
+    title: string;
 }
 
-const SectionHeader = ({ title }: SectionHeaderProps) => {
+const SectionHeader = ({ title, sectionId }: SectionHeaderProps) => {
   return (
-    <div className="flex items-center gap-4 mb-7 lg:mb-9">
+    <div id={sectionId} className="flex items-center gap-4 mb-7 lg:mb-9">
       <h1 className="whitespace-nowrap font-mono text-slate-200 text-2xl font-bold capitalize">
         { title }
       </h1>

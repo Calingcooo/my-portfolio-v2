@@ -41,9 +41,10 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
         ></span>
       </button>
 
+      {/* Backdrop - Fixed position covering entire viewport */}
       {isOpen && (
         <div
-          className="fixed inset-0 min-h-svh z-40 w-full backdrop-blur-xl"
+          className="fixed min-h-svh min-w-svw inset-0 z-40 bg-black/80"
           onClick={() => setIsOpen(false)}
         ></div>
       )}

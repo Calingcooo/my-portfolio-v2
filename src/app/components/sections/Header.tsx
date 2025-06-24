@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import DesktopNav from "../Navigation/DesktopNav";
 import MobileNav from "../Navigation/MobileNav";
-import logo from "../../../../public/assets/logo_colored.png"
+import logo from "../../../../public/assets/logo_colored.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -34,11 +34,7 @@ const Header = () => {
   return (
     <div
       className={`fixed top-0 left-0 h-24 z-50 w-full flex justify-between items-center px-5 lg:px-16
-      ${
-        isScrolled
-          ? "backdrop-blur-[10px] dark:bg-[#0a192f]/80 bg-[#f4f4f4b3]"
-          : "bg-transparent"
-      }`}
+      ${isScrolled ? "backdrop-blur-md dark:bg-[#0a192f]/80 bg-[#f4f4f4b3]" : "bg-transparent"}`}
     >
       {/* LOGO */}
       <Image
