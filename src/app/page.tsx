@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
+import Header from "./components/sections/Header";
 import Social from "./components/Social";
 import Email from "./components/Email";
 import ImageDrawingLoader from "./components/Loading";
@@ -10,7 +10,7 @@ import About from "./components/sections/About";
 import Career from "./components/sections/Career";
 import Project from "./components/sections/Project";
 import Contact from "./components/sections/Contact";
-import Footer from "./components/Footer";
+import Footer from "./components/sections/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
