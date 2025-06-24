@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import DesktopNav from "./Navigation/DesktopNav";
-import MobileNav from "./Navigation/MobileNav";
-import logo from "../../../public/assets/logo_colored.png"
+import DesktopNav from "../Navigation/DesktopNav";
+import MobileNav from "../Navigation/MobileNav";
+import logo from "../../../../public/assets/logo_colored.png"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
