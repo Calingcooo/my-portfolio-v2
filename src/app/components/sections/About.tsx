@@ -14,9 +14,9 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="flex flex-col justify-center text-white w-full min-h-svh">
+    <section className="flex flex-col justify-center text-white w-full min-h-svh">
       <div className="md:py-10 lg:py-20 lg:mx-5 xl:mx-10">
-        <SectionHeader title="About me" />
+        <SectionHeader sectionId ="about" title="About me" />
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="w-full lg:w-[60%]">
             <p className="leading-relaxed text-md text-slate-400 mb-5 text-wrap xl:text-lg">

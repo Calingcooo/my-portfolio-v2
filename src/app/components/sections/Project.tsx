@@ -5,9 +5,9 @@ import FeaturedProjectCard from "../ProjectHighlights/FeaturedProjectCard";
 
 const Project = () => {
   return (
-    <section id="project-highlights" className="w-full">
+    <section className="w-full">
       <div className="mx-0 xl:mx-10 md:py-20">
-        <SectionHeader title="Some Things I’ve Built" />
+        <SectionHeader sectionId="project-highlights" title="Some Things I’ve Built" />
         <div className="flex flex-col">
           {projectData.map((proj, i) => (
             <FeaturedProjectCard project={proj} index={i+1} key={proj.id} />
