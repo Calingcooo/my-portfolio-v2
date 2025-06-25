@@ -41,7 +41,7 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
 
         <ul
-          className={`flex flex-wrap gap-2 lg:gap-5 mt-5 md:mt-2 lg:mt-5 z-20 ${
+          className={`flex flex-wrap gap-2 lg:gap-3 mt-5 md:mt-2 lg:mt-5 z-20 ${
             isEven ? "md:justify-start" : "md:justify-end"
           }`}
         >
@@ -81,12 +81,12 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
         }
       `}
       >
-        <div className="h-full relative group">
-          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full h-full absolute transition-colors duration-300" />
+        <div className="flex justify-center w-full relative group">
+          <div className="bg-[#64ffda]/20 group-hover:bg-transparent w-full absolute transition-colors duration-300" />
           <Image
             src={project.imgSrc}
             alt={project.title}
-            className="hidden md:block h-full opacity-20 group-hover:opacity-100 duration-300"
+            className="hidden md:block w-full opacity-20 group-hover:opacity-100 duration-300"
           />
         </div>
       </div>
