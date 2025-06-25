@@ -79,7 +79,9 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
               </li>
             ))}
             <a
-              href="#"
+              href="calingco_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-poppins outline-[#64ffda] outline-1 font-light tracking-wide rounded-sm px-8 py-3 cursor-pointer text-[#f4f4f4] dark:text-[#64ffda] bg-[#0f0f0f] dark:bg-transparent hover:-translate-1.5 hover:shadow-[5px_5px_0_0_#64ffda] transition-all duration-300 ease-in-out"
             >
               resume
