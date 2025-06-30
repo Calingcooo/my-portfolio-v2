@@ -10,36 +10,37 @@ export type CareerItem = {
 export const careerData: CareerItem[] = [
     {
         id: "arhika-technologies-inc",
-        title: "arhika",
-        role: "Jr. Full-stack Web Developer",
+        title: "Arhika Technologies Inc.",
+        role: "Jr. Full-Stack Developer",
         period: "Sept 2024 - Present",
         responsibilities: [
-            "Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more",
-            "Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements",
-            "Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders",
-            "Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship"
+            "Developed high-quality, production-grade code for client projects (Rai Rai Ken, ATOP Ph, ABC Tech Inc.), ensuring reliability and scalability.",
+            "Partnered with senior engineers to research, design, and architect technical solutions aligned with business goals.",
+            "Translated design concepts into functional products by collaborating closely with designers, PMs, and stakeholders.",
+            "Contributed to engineering team growth through knowledge-sharing, code reviews, and mentoring junior developers.",
         ],
     },
     {
         id: "digital-ecosystem-technologies-inc",
-        title: "digital ecosystems",
-        role: "Jr. Full-stack Web Developer",
+        title: "Digital Ecosystem Technologies Inc.",
+        role: "Jr. Full-Stack Developer",
         period: "Aug 2023 - Sept 2024",
         responsibilities: [
-            "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-            "Collaborated with designers to implement pixel-perfect UIs",
-            "Optimized application performance and accessibility"
+            "Built and maintained client applications using React, TypeScript, Tailwind CSS, Node.js, Express, and PostgreSQL/MySQL.",
+            "Collaborated with frontend engineers to develop a reusable component library, improving code consistency.",
+            "Researched and architected technical solutions to meet business requirements, from planning to deployment.",
+            "Optimized web applications for performance and accessibility, enhancing user experience.",
         ],
     },
     {
         id: "skin-manila-inc",
-        title: "skin manila",
-        role: "I.T Specialist",
+        title: "Skin Manila Inc.",
+        role: "IT Specialist",
         period: "Dec 2022 - July 2023",
         responsibilities: [
-            "Created reusable component library",
-            "Implemented design system across all products",
-            "Conducted user testing sessions"
-        ]
+            "Worked with department heads to research, develop, and architect IT solutions for business needs.",
+            "Implemented a standardized design system across company products to unify UI/UX.",
+            "Conducted user testing sessions to gather feedback and validate product improvements.",
+        ],
     },
 ];
