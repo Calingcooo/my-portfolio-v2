@@ -18,11 +18,10 @@ export const projectData: ProjectItem[] = [
     {
         id: "abril-law-firm",
         title: "abril law firm",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-        category: "featured",
+        description: "A professional landing page for a law practitioner, designed to establish online presence and credibility. Includes a contact form for sending email inquiries directly from the site.",        category: "featured",
         imgSrc: lawFirm,
         srcCode: "",
-        link: "",
+        link: "http://www.abrillawoffice.com",
         tools: ["Next JS", "Tailwind CSS", "Hostinger VPS"],
     },
     {
@@ -38,11 +37,10 @@ export const projectData: ProjectItem[] = [
     {
         id: "my-portfolio",
         title: "web portfolio",
-        description: "A modular Android-based ordering system with real-time POS integration, built for fine dining operations. The suite includes rairaiken-order (client-side), rairaiken-kitchen and rairaiken-bar (backend processing), and rairaiken-order-monitoring (live tracking). Enables seamless end-to-end order flow from table to kitchen, bar, and billing.",
-        category: "featured",
+        description: "A personal web portfolio showcasing my projects, skills, and professional experience. Built with a modern tech stack, it highlights featured work, technical expertise, and offers easy access for potential collaborators or employers to get in touch.",        category: "featured",
         imgSrc: portfolio,
-        srcCode: "",
-        link: "",
-        tools: ["React Native", "Expo", "CSS", "Node JS", "Express JS", "Socket IO", "Postgre SQL", "Mongo DB", "Redis Server", "Linux Ubuntu"]
+        srcCode: "https://github.com/Calingcooo/my-portfolio-v2",
+        link: "https://my-portfolio-v2-jade.vercel.app",
+        tools: ["Next JS", "Tailwind CSS", "Vercel"]
     }
 ];
