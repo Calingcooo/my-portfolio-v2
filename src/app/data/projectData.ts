@@ -39,7 +39,7 @@ export const projectData: ProjectItem[] = [
         title: "web portfolio",
         description: "A personal web portfolio showcasing my projects, skills, and professional experience. Built with a modern tech stack, it highlights featured work, technical expertise, and offers easy access for potential collaborators or employers to get in touch.",        category: "featured",
         imgSrc: portfolio,
-        srcCode: "",
+        srcCode: "https://github.com/Calingcooo/my-portfolio-v2",
         link: "https://my-portfolio-v2-jade.vercel.app",
         tools: ["Next JS", "Tailwind CSS", "Vercel"]
     }
