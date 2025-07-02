@@ -57,16 +57,38 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
             isEven ? "md:justify-start" : "md:justify-end"
           }`}
         >
-          <a href={project.srcCode} target="_blank">
+          <a
+            href={project.srcCode === "" ? undefined : project.srcCode}
+            target="_blank"
+            aria-disabled={project.srcCode === ""}
+            className={`inline-flex ${
+              project.srcCode === ""
+                ? "pointer-events-none cursor-not-allowed"
+                : ""
+            }`}
+          >
             <FiGithub
               size={18}
-              className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
+              className={`text-[#ccd6f6] transition-colors duration-200 ease-in-out ${
+                project.srcCode === "" ? "opacity-50" : "hover:text-[#64ffda]"
+              }`}
             />
           </a>
-          <a href={project.link} target="_blank">
+          <a
+            href={project.link === "" ? "#" : project.link}
+            target="_blank"
+            aria-disabled={project.link === ""}
+            className={`inline-flex ${
+              project.link === ""
+                ? "pointer-events-none cursor-not-allowed"
+                : ""
+            }`}
+          >
             <FiExternalLink
               size={20}
-              className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
+              className={`text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out ${
+                project.link === "" ? "opacity-50" : "hover:text-[#64ffda]"
+              }`}
             />
           </a>
         </div>
