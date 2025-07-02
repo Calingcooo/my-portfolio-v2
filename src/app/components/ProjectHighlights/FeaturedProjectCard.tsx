@@ -57,13 +57,13 @@ const FeaturedProjectCard = ({ project, index }: ProjectCardProps) => {
             isEven ? "md:justify-start" : "md:justify-end"
           }`}
         >
-          <a href="#">
+          <a href={project.srcCode} target="_blank">
             <FiGithub
               size={18}
               className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
             />
           </a>
-          <a href="#">
+          <a href={project.link} target="_blank">
             <FiExternalLink
               size={20}
               className="text-[#ccd6f6] hover:text-[#64ffda] transition-colors duration-200 ease-in-out"
