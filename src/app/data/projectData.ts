@@ -21,7 +21,7 @@ export const projectData: ProjectItem[] = [
         description: "A professional landing page for a law practitioner, designed to establish online presence and credibility. Includes a contact form for sending email inquiries directly from the site.",        category: "featured",
         imgSrc: lawFirm,
         srcCode: "",
-        link: "http://www.abrillawoffice.com",
+        link: "https://law-abril-portfolio-eight.vercel.app",
         tools: ["Next JS", "Tailwind CSS", "Hostinger VPS"],
     },
     {
