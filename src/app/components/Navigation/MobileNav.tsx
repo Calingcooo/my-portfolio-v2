@@ -44,7 +44,7 @@ const MobileNav = ({ navItems }: MobileNavProps) => {
       {/* Backdrop - Fixed position covering entire viewport */}
       {isOpen && (
         <div
-          className="fixed min-h-svh min-w-svw inset-0 z-40 bg-black/80"
+          className="hidden md:fixed min-h-svh min-w-svw inset-0 z-40 bg-black/80"
           onClick={() => setIsOpen(false)}
         ></div>
       )}

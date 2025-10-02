@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import devoSuite from "../../../public/assets/project_images/devosuite.png"
 import lawFirm from "../../../public/assets/project_images/law_firm_2.png"
 import rairaiken from "../../../public/assets/project_images/rairaiken-ordering.jpg"
 import portfolio from "../../../public/assets/project_images/my_portfolio.png"
@@ -16,9 +17,19 @@ export type ProjectItem = {
 
 export const projectData: ProjectItem[] = [
     {
+        id: "devo-suite",
+        title: "DevoSuite",
+        description: "A subscription-based ERP platform that helps businesses streamline operations and scale with ease. DevoSuite brings together inventory management, accounting, HR, and customer relations into one powerful system—designed for efficiency, reliability, and growth.",
+        category: "featured",
+        imgSrc: devoSuite,
+        srcCode: "",
+        link: "",
+        tools: ["React", "Vite", "Tailwind CSS", "Node JS", "Express JS", "Postgre SQL", "Hostinger VPS"],
+    },
+    {
         id: "abril-law-firm",
         title: "abril law firm",
-        description: "A professional landing page for a law practitioner, designed to establish online presence and credibility. Includes a contact form for sending email inquiries directly from the site.",        category: "featured",
+        description: "A professional landing page for a law practitioner, designed to establish online presence and credibility. Includes a contact form for sending email inquiries directly from the site.", category: "featured",
         imgSrc: lawFirm,
         srcCode: "",
         link: "https://law-abril-portfolio-eight.vercel.app",
@@ -37,7 +48,7 @@ export const projectData: ProjectItem[] = [
     {
         id: "my-portfolio",
         title: "web portfolio",
-        description: "A personal web portfolio showcasing my projects, skills, and professional experience. Built with a modern tech stack, it highlights featured work, technical expertise, and offers easy access for potential collaborators or employers to get in touch.",        category: "featured",
+        description: "A personal web portfolio showcasing my projects, skills, and professional experience. Built with a modern tech stack, it highlights featured work, technical expertise, and offers easy access for potential collaborators or employers to get in touch.", category: "featured",
         imgSrc: portfolio,
         srcCode: "https://github.com/Calingcooo/my-portfolio-v2",
         link: "https://my-portfolio-v2-jade.vercel.app",
