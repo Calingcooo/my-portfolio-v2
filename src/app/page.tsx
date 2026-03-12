@@ -28,18 +28,23 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-svh mx-5 relative md:mx-10 md:px-10 lg:mx-15 lg:px-15 xl:mx-80 xl:px-40">
-      <Header />
-      <main className="flex flex-col justify-center items-center h-full mt-10">
-        <Social />
-        <Email />
-        <Hero />
-        <About />
-        <Career />
-        <Project />
-        <Contact />
-        <Footer />
-      </main>
+    <div className="relative min-h-svh">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-10">
+        <Header />
+
+        <main className="flex flex-col items-center w-full">
+          <Social />
+          <Email />
+
+          <Hero />
+          <About />
+          <Career />
+          <Project />
+          <Contact />
+
+          <Footer />
+        </main>
+      </div>
     </div>
   );
 }
